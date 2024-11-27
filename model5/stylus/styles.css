@@ -1,0 +1,255 @@
+:root {
+  --color-purple-light: #f5f9ff;
+  --color-blue-light: #a9b9f8;
+  --color-blue: #5372f0;
+  --color-dark: #2c3e50;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+html {
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+  background-color: #fff;
+}
+.header-title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  color: var(--color-dark);
+}
+.header-slogan {
+  font-weight: 400;
+  color: var(--color-dark);
+}
+.adventures-title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  color: var(--color-blue);
+  transition: opacity 0.25s ease-in-out;
+}
+.adventures-title:hover {
+  color: var(--color-dark);
+  opacity: 0.7;
+}
+.footer-link {
+  font-size: 16px;
+  font-weight: 700;
+  transition: opacity 0.25s ease-in-out;
+}
+.footer-link:hover {
+  opacity: 0.7;
+}
+.header {
+  margin-top: 100px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.header-logo {
+  width: 100px;
+  height: 100px;
+}
+.header-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.header-title {
+  font-size: 42px;
+}
+.header-slogan {
+  font-size: 24px;
+  text-align: justify;
+}
+.adventures-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.adventures-img {
+  width: 180px;
+  height: 180px;
+}
+.adventures-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.adventures-title {
+  font-size: 24px;
+  text-align: left;
+  margin-bottom: 15px;
+}
+.adventures-item {
+  font-size: 16px;
+  text-align: justify;
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  align-items: center;
+  max-width: 700px;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.subscription-form {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 100px;
+}
+.subscription-input {
+  padding: 15px;
+  border: 1px solid var(--color-blue-light);
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  width: 400px;
+  font-size: 16px;
+}
+.subscription-button {
+  padding: 15px 30px;
+  border: none;
+  font-size: 16px;
+  border-radius: 5px;
+  background-color: var(--color-blue);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  color: #fff;
+  transition: opacity 0.25s ease-in-out;
+  cursor: pointer;
+}
+.subscription-button:hover {
+  background-color: var(--color-dark);
+  color: #fff;
+}
+.footer {
+  width: 100%;
+  border-top: 1px solid var(--color-blue-light);
+  background-color: var(--color-purple-light);
+}
+.footer-logo {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: opacity 0.25s ease-in-out;
+  margin-top: 10px;
+  left: 10px;
+}
+.footer-logo:hover {
+  opacity: 0.7;
+}
+.footer-logo img {
+  fill: var(--color-dark);
+  width: 25px;
+}
+.footer-logo h1 {
+  font-size: 24px;
+  font-weight: 0;
+  color: var(--color-dark);
+}
+.footer-list {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  justify-content: center;
+  gap: 10px 20px;
+  padding: 20px 0;
+}
+.footer-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: var(--color-dark);
+}
+.container {
+  padding-inline: 40px;
+}
+.main {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+}
+@media (max-width: 390px) {
+  .header {
+    margin-top: 20px;
+    align-items: center;
+  }
+  .header-logo {
+    width: 60px;
+    height: 60px;
+  }
+  .header-title {
+    font-size: 28px;
+  }
+  .header-slogan {
+    max-width: 195px;
+    font-size: 15px;
+  }
+  .main {
+    margin-top: 20px;
+  }
+  .adventures-list {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .adventures-img {
+    height: 200px;
+    width: 100%;
+  }
+  .adventures-title {
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .adventures-item {
+    font-size: 15px;
+    grid-template-columns: 1fr;
+    width: 300px;
+  }
+  .subscription-form {
+    align-items: center;
+    gap: 5px;
+    width: 300px;
+    margin-bottom: 40px;
+  }
+  .subscription-button {
+    font-size: 12px;
+    padding: 0;
+    height: 30px;
+    width: 40%;
+  }
+  .subscription-input {
+    font-size: 12px;
+    height: 25px;
+    width: 100%;
+  }
+  .footer {
+    width: 100%;
+  }
+  .footer-logo {
+    position: static;
+    margin-left: 20px;
+  }
+  .container {
+    padding-inline: 20px;
+  }
+}

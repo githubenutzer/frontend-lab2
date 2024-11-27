@@ -1,0 +1,38 @@
+@media (max-width: 390px) {
+    .header-logo h1 {
+        display: none;
+    }
+
+    .header-menu img {
+        display: block;
+        fill: var(--color-dark);
+        width: 30px;
+        cursor: pointer;
+        transition: opacity 0.25s ease-in-out;
+
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+
+    .header-search {
+        width: 330px;
+        margin-right: 0px;
+    }
+
+    .header-nav-list {
+        gap: 20px;
+    }
+
+    .sidebar {
+        display: none;
+    }
+
+    .footer {
+        font-size: 14px;
+    }
+
+    .main {
+        grid-template-columns: 1fr;
+    }
+}

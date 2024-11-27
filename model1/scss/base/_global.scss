@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--color-purple-light);
+    width: 100%;
+    min-height: 100vh;
+    height: 100%;
+}
+
+h1, .header-nav-link, .post-title h1 {
+    font-family: 'Poppins', sans-serif;
+}

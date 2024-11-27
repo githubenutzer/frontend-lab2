@@ -1,0 +1,14 @@
+.footer {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: var(--footer-height);
+  font-size: 16px;
+  font-weight: bold;
+  border-top: 1px solid var(--color-blue-light);
+  background-color: white;
+  color: var(--color-dark);
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}

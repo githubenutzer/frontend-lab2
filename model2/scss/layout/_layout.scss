@@ -1,0 +1,16 @@
+.layout {
+    display: table;
+    width: 100%;
+    border-collapse: collapse;
+
+    aside {
+        display: table-cell;
+        width: 20%;
+        vertical-align: top;
+    }
+
+    section {
+        display: table-cell;
+        width: 80%;
+    }
+}

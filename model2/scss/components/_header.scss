@@ -1,0 +1,75 @@
+.header {
+    display: flex;
+    border-bottom: 1px solid var(--color-blue-light);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: var(--color-purple-light);
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+
+    &-logo {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        transition: opacity 0.25s ease-in-out;
+
+        &:hover {
+            opacity: 0.7;
+        }
+
+        img {
+            fill: var(--color-dark);
+            width: 25px;
+        }
+
+        h1 {
+            font-size: 24px;
+            color: var(--color-dark);
+        }
+    }
+
+    &-search {
+        position: relative;
+        padding-left: 120px;
+
+        input {
+            padding-left: 10px;
+            padding-right: 30px;
+            width: 1150px;
+            height: 25px;
+            border-radius: 5px;
+            border: 1px solid var(--color-blue-light);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+            &:focus {
+                outline: none;
+                border-color: var(--color-blue);
+            }
+        }
+
+        i {
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            transform: translateY(-50%);
+            color: var(--color-blue);
+            cursor: pointer;
+        }
+
+        &-input {
+            img {
+                position: absolute;
+                width: 16px;
+                top: 50%;
+                right: 0;
+                transform: translate(-50%, -50%);
+                fill: var(--color-dark);
+            }
+        }
+    }
+
+    &-cart-btn {
+        width: 30px;
+        border-radius: 5px;
+    }
+}

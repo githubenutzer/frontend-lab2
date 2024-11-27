@@ -1,0 +1,23 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px 0;
+
+    td {
+        width: 33%;
+        text-align: center;
+        border: 1px solid var(--color-blue-light);
+        padding: 10px;
+        vertical-align: bottom;
+
+        img {
+            width: 100%;
+            display: block;
+            margin: 0 auto 10px;
+        }
+
+        button {
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+    }
+}

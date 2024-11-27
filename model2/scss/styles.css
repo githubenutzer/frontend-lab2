@@ -1,0 +1,265 @@
+:root {
+  --color-purple-light: #f5f9ff;
+  --color-blue-light: #a9b9f8;
+  --color-blue: #5372f0;
+  --color-dark: #2c3e50;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  transition: all 0.25s ease-in-out;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  background-color: white;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-blue);
+}
+
+button:hover, a:hover {
+  opacity: 0.7;
+}
+
+button {
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: var(--color-dark);
+  cursor: pointer;
+}
+
+li:hover {
+  transform: translateX(5px);
+}
+
+button:hover, a:hover {
+  opacity: 0.7;
+}
+
+button {
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: var(--color-dark);
+  cursor: pointer;
+}
+
+.header {
+  display: flex;
+  border-bottom: 1px solid var(--color-blue-light);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: var(--color-purple-light);
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+.header-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: opacity 0.25s ease-in-out;
+}
+.header-logo:hover {
+  opacity: 0.7;
+}
+.header-logo img {
+  fill: var(--color-dark);
+  width: 25px;
+}
+.header-logo h1 {
+  font-size: 24px;
+  color: var(--color-dark);
+}
+.header-search {
+  position: relative;
+  padding-left: 120px;
+}
+.header-search input {
+  padding-left: 10px;
+  padding-right: 30px;
+  width: 1150px;
+  height: 25px;
+  border-radius: 5px;
+  border: 1px solid var(--color-blue-light);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.header-search input:focus {
+  outline: none;
+  border-color: var(--color-blue);
+}
+.header-search i {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  color: var(--color-blue);
+  cursor: pointer;
+}
+.header-search-input img {
+  position: absolute;
+  width: 16px;
+  top: 50%;
+  right: 0;
+  transform: translate(-50%, -50%);
+  fill: var(--color-dark);
+}
+.header-cart-btn {
+  width: 30px;
+  border-radius: 5px;
+}
+
+.filters {
+  display: block;
+  list-style-type: none;
+  border: 1px solid var(--color-blue-light);
+  border-radius: 5px;
+  background-color: var(--color-purple-light);
+  padding: 10px;
+  margin: 10px;
+}
+.filters li {
+  margin: 5px;
+}
+.filters .filters-link {
+  color: var(--color-dark);
+  padding: 3px;
+  border-radius: 5px;
+  transition: opacity 0.25s ease-in-out;
+}
+.filters .filters-link:hover {
+  opacity: 0.7;
+}
+
+.tour-hotel, .tour-price {
+  margin-bottom: 5px;
+}
+
+.tour-info {
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+.footer {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: bold;
+  border-top: 1px solid var(--color-blue-light);
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+  background-color: var(--color-purple-light);
+  color: var(--color-dark);
+  padding: 15px;
+}
+
+.layout {
+  display: table;
+  width: 100%;
+  border-collapse: collapse;
+}
+.layout aside {
+  display: table-cell;
+  width: 20%;
+  vertical-align: top;
+}
+.layout section {
+  display: table-cell;
+  width: 80%;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 10px 0;
+}
+table td {
+  width: 33%;
+  text-align: center;
+  border: 1px solid var(--color-blue-light);
+  padding: 10px;
+  vertical-align: bottom;
+}
+table td img {
+  width: 100%;
+  display: block;
+  margin: 0 auto 10px;
+}
+table td button {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 390px) {
+  .header {
+    gap: 10px;
+  }
+  .header-logo h1 {
+    display: none;
+  }
+  .header-search {
+    padding-left: 0;
+  }
+  .header-search input {
+    width: 290px;
+  }
+  .filters {
+    display: flex;
+    flex-direction: column;
+    width: 370px;
+    margin: 0;
+  }
+  .layout {
+    display: block;
+    padding: 10px;
+  }
+  .layout aside, .layout section {
+    display: block;
+    width: 100%;
+  }
+  table {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  td {
+    width: calc(50% - 10px);
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    border: 1px solid var(--color-blue-light);
+    font-size: 14px;
+    vertical-align: bottom;
+  }
+  td img {
+    width: 100px;
+  }
+  td button {
+    width: 90px;
+    padding: 5px;
+    font-size: 14px;
+  }
+  .footer {
+    font-size: 14px;
+  }
+  button {
+    width: 100px;
+  }
+}/*# sourceMappingURL=styles.css.map */

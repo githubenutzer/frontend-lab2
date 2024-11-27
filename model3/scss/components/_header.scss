@@ -1,0 +1,49 @@
+.header {
+    height: 70px;
+    padding-inline: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--color-blue-light);
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: opacity 0.25s ease-in-out;
+}
+
+.header-logo:hover {
+    opacity: 0.7;
+}
+
+.header-logo img {
+    fill: var(--color-dark);
+    width: 25px;
+}
+
+.header-logo h1 {
+    font-size: 24px;
+    color: var(--color-dark);
+}
+
+.register-btn {
+    padding: 8px;
+    width: 150px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid var(--color-blue-light);
+    background-color: var(--color-blue);
+    color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.25s ease-in-out;
+    cursor: pointer;
+}
+
+.register-btn:hover {
+    background-color: var(--color-dark);
+    color: white;
+}

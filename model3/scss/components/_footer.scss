@@ -1,0 +1,35 @@
+.footer {
+    width: 100%;
+}
+
+.footer .header-logo {
+    position: absolute;
+    left: 10px;
+    margin-top: 10px;
+}
+
+.footer-list {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    justify-content: center;
+    gap: 10px 20px;
+    padding: 20px 0;
+}
+
+.footer-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--color-dark);
+}
+
+.footer-link {
+    font-size: 16px;
+    font-weight: 700;
+    transition: opacity 0.25s ease-in-out;
+}
+
+.footer-link:hover {
+    opacity: 0.7;
+}

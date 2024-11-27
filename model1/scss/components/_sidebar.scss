@@ -1,0 +1,30 @@
+.sidebar {
+  position: sticky;
+  z-index: 1;
+  top: 111px;
+  border: 1px solid var(--color-blue-light);
+  border-radius: 5px;
+  max-height: calc(100vh - 111px - 52px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+  padding-bottom: var(--footer-height);
+  background-color: white;
+
+  &-list {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      padding: 10px;
+  }
+
+  &-link {
+      color: var(--color-dark);
+      padding: 3px;
+      border-radius: 5px;
+      transition: opacity 0.25s ease-in-out;
+
+      &:hover {
+          opacity: 0.7;
+      }
+  }
+}

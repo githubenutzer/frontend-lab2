@@ -1,0 +1,8 @@
+.main {
+    position: relative;
+    margin: 10px;
+    display: grid;
+    grid-template-columns: 200px 1fr 200px;
+    grid-row: auto;
+    gap: 15px;
+}

@@ -1,0 +1,329 @@
+:root {
+  --color-purple-light: #f5f9ff;
+  --color-blue-light: #a9b9f8;
+  --color-blue: #5372f0;
+  --color-dark: #2c3e50;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: "Roboto", sans-serif;
+  background-color: var(--color-purple-light);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.25s ease-in-out;
+}
+
+ul {
+  list-style: none;
+}
+
+.header {
+  height: 70px;
+  padding-inline: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--color-blue-light);
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: opacity 0.25s ease-in-out;
+}
+
+.header-logo:hover {
+  opacity: 0.7;
+}
+
+.header-logo img {
+  fill: var(--color-dark);
+  width: 25px;
+}
+
+.header-logo h1 {
+  font-size: 24px;
+  color: var(--color-dark);
+}
+
+.register-btn {
+  padding: 8px;
+  width: 150px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid var(--color-blue-light);
+  background-color: var(--color-blue);
+  color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.25s ease-in-out;
+  cursor: pointer;
+}
+
+.register-btn:hover {
+  background-color: var(--color-dark);
+  color: white;
+}
+
+.info-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border-bottom: 1px solid var(--color-blue-light);
+}
+
+.info-title {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  font-size: 36px;
+  font-family: "Poppins", sans-serif;
+  color: var(--color-dark);
+}
+
+.info-about {
+  padding-inline: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 40px;
+}
+
+.info-about .register-btn {
+  margin-bottom: 15px;
+}
+
+.info-content {
+  font-size: 20px;
+  max-width: 640px;
+  text-align: justify;
+  color: var(--color-dark);
+  margin-bottom: 8px;
+}
+
+.info-image {
+  width: 780px;
+}
+
+.info-image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.promo {
+  border-bottom: 1px solid var(--color-blue-light);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  background-image: url("../assets/images/Beach.jpg");
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.promo .register-btn {
+  width: 400px;
+}
+
+.promo-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  margin-bottom: 25px;
+}
+
+.promo-item {
+  padding: 15px;
+  border: 1px solid var(--color-blue-light);
+  background-color: var(--color-purple-light);
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.promo-title {
+  color: var(--color-dark);
+  margin-bottom: 10px;
+}
+
+.promo-content {
+  color: var(--color-dark);
+  text-align: justify;
+  margin-bottom: 7px;
+}
+
+.tips {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  border-bottom: 1px solid var(--color-blue-light);
+  background-color: white;
+}
+
+.tips-main-title {
+  font-size: 36px;
+  color: var(--color-dark);
+}
+
+.tips-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.tips-item {
+  border: 1px solid var(--color-blue-light);
+  display: flex;
+  align-items: center;
+  background-color: var(--color-purple-light);
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.tips-number {
+  font-size: 44px;
+  color: var(--color-dark);
+  margin-inline: 25px;
+}
+
+.tips-about {
+  padding: 20px;
+}
+
+.tips-title {
+  font-size: 24px;
+  color: var(--color-dark);
+  margin-bottom: 10px;
+}
+
+.tips-content {
+  color: var(--color-dark);
+  text-align: justify;
+}
+
+.footer {
+  width: 100%;
+}
+
+.footer .header-logo {
+  position: absolute;
+  left: 10px;
+  margin-top: 10px;
+}
+
+.footer-list {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  justify-content: center;
+  gap: 10px 20px;
+  padding: 20px 0;
+}
+
+.footer-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: var(--color-dark);
+}
+
+.footer-link {
+  font-size: 16px;
+  font-weight: 700;
+  transition: opacity 0.25s ease-in-out;
+}
+
+.footer-link:hover {
+  opacity: 0.7;
+}
+
+.container {
+  padding: 30px 120px;
+}
+
+@media (max-width: 390px) {
+  .header {
+    width: 100%;
+  }
+  .header-logo {
+    font-size: 24px;
+  }
+  .register-btn {
+    font-size: 16px;
+  }
+  .info-about .register-btn {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  .info-about {
+    width: 370px;
+    margin-left: 10px;
+  }
+  .info-section {
+    grid-template-columns: 1fr;
+  }
+  .info-image {
+    width: 390px;
+  }
+  .info-title {
+    font-size: 20px;
+  }
+  .info-content {
+    font-size: 14px;
+  }
+  .container {
+    padding: 20px;
+  }
+  .promo {
+    background-image: url("../assets/images/Beach Mobile.jpg");
+  }
+  .promo-list {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  .promo-title {
+    font-size: 22px;
+  }
+  .promo .register-btn {
+    width: 100%;
+  }
+  .tips {
+    gap: 0;
+  }
+  .tips-main-title {
+    font-size: 26px;
+    color: var(--color-dark);
+  }
+  .tips-list {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin-block: 10px;
+  }
+  .tips-title {
+    font-size: 22px;
+  }
+  .tips .register-btn {
+    width: 100%;
+  }
+  .footer {
+    width: 100%;
+  }
+  .footer .header-logo {
+    position: static;
+    margin-left: 20px;
+  }
+}/*# sourceMappingURL=styles.css.map */
